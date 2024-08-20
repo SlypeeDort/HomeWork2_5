@@ -1,7 +1,4 @@
-def get_matrix():
-    columns = int(input('Введите количество столбцов '))
-    lines = int(input('Введите количество строк '))
-    value = int(input('Введите число '))
+def get_matrix(columns, lines, value):
     matrix = []
     for i in range(lines):
         list = []
@@ -11,9 +8,7 @@ def get_matrix():
     return matrix
 
 
-result1 = get_matrix()
-result2 = get_matrix()
-result3 = get_matrix()
+result1 = get_matrix(int(input('Введите количество столбцов ')),
+                     int(input('Введите количество строк ')),
+                     int(input('Введите число ')))
 print('1 ' + str(result1))
-print('2 ' + str(result2))
-print('3 ' + str(result3))
